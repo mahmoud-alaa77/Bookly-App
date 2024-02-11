@@ -3,19 +3,20 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utils/styles.dart';
 
-class RatingWidget extends StatelessWidget {
-  const RatingWidget({super.key});
-
+class CustomRatingWidget extends StatelessWidget {
+  const CustomRatingWidget({super.key,  this.mainAxisAlignment= MainAxisAlignment.start});
+final MainAxisAlignment mainAxisAlignment ;
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment:mainAxisAlignment ,
       children: [
         const Icon(
           FontAwesomeIcons.solidStar,
           color: Colors.yellow,
         ),
         const SizedBox(
-          width: 6.3,
+          width: 8,
         ),
         const Text(
           "4.8",

@@ -7,7 +7,7 @@ class CustomBookItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SizedBox(
       child: AspectRatio(
-        aspectRatio: 2.7/4,
+        aspectRatio: 2.8/4,
         child: Container(
           decoration:const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(16)),
