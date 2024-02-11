@@ -54,7 +54,7 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const CustomButton(),
           const SizedBox(
-            height: 36,
+            height: 48,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
