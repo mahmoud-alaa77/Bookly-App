@@ -1,7 +1,6 @@
 import 'package:bookly_app/features/search/presentation/views/widgets/search_result_list_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utils/styles.dart';
 import 'custom_search_text_field.dart';
 
