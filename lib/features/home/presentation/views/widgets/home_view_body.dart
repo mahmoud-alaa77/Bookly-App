@@ -42,7 +42,7 @@ class HomeViewBody extends StatelessWidget {
           SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsetsDirectional.symmetric(horizontal: 30),
-              child: BestSellerListView(),
+              child: NewestListView(),
             ),
           ),
         ],
