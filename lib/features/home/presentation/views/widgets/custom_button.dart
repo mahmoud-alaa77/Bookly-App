@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, required this.previewLink});
+final String previewLink;
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
@@ -24,7 +25,7 @@ class CustomButton extends StatelessWidget {
                             topStart: Radius.circular(16),
                             bottomStart: Radius.circular(16)))),
                 child: Text(
-                  "19.99 \$",
+                  "Free",
                   style: Styles.textStyle18.copyWith(
                       color: Colors.black, fontWeight: FontWeight.bold),
                 )),
@@ -33,7 +34,12 @@ class CustomButton extends StatelessWidget {
             width: screenWidth / 2.5,
             height: 48,
             child: TextButton(
-                onPressed: () {},
+                onPressed: () async{
+                  Uri url =Uri.parse(previewLink);
+                  if (!await launchUrl(url)) {
+                  throw Exception('Could not launch $url');
+                  }
+                },
                 style: TextButton.styleFrom(
                     backgroundColor: const Color(0xffEF8262),
                     shape: const RoundedRectangleBorder(
