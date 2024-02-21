@@ -1,4 +1,4 @@
-import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/core/utils/constants.dart';
 import 'package:bookly_app/core/utils/api_services.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo_implmentation.dart';
 import 'package:bookly_app/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
