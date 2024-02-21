@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/app_router.dart';
-import 'custom_book_item.dart';
+import 'featured_list_book_item.dart';
 
 class SimilarBookListView extends StatelessWidget {
   const SimilarBookListView({super.key});
@@ -28,7 +28,7 @@ class SimilarBookListView extends StatelessWidget {
                    padding: const EdgeInsetsDirectional.only(top: 16,bottom: 42,end: 16),
                    child: SizedBox(
                        width: MediaQuery.of(context).size.width/4.5,
-                       child:   CustomBookItem(
+                       child:   FeaturedListBookItem(
                          image: state.books[index].imageUrl,
                          bookModel: state.books[index],
                          onTap: (){
@@ -40,7 +40,7 @@ class SimilarBookListView extends StatelessWidget {
              ),
            );
          }else if(state is SimilarBooksFailure){
-           return CustomErrorWidget(errorMessage: state.errorMessage);
+           return const CustomErrorWidget(errorMessage: "Not found a books like this");
          }else{
            return const CustomLoadingWidget();
          }

@@ -3,6 +3,8 @@ import 'package:bookly_app/core/utils/api_services.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo_implmentation.dart';
 import 'package:bookly_app/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
 import 'package:bookly_app/features/home/presentation/manger/newest_books_cubit/newset_books_cubit.dart';
+import 'package:bookly_app/features/search/data/repos/search_repo.dart';
+import 'package:bookly_app/features/search/data/repos/search_repo_implemntation.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,6 +12,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'core/utils/app_router.dart';
 import 'core/utils/bloc_observer.dart';
+import 'features/search/presentation/manger/search_books_cubit/search_book_cubit.dart';
 
 void main() {
   Bloc.observer = SimpleBlocObserver();

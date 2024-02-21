@@ -1,5 +1,5 @@
-import 'package:bookly_app/features/home/data/models/book_model.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_item.dart';
+import 'package:bookly_app/core/models/book_model.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/featured_list_book_item.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/rating_widget.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ final BookModel book;
             Padding(
               padding:
                   EdgeInsetsDirectional.symmetric(horizontal: screenWidth * .15),
-              child:  CustomBookItem(
+              child:  FeaturedListBookItem(
 image: book.imageUrl,
                 bookModel: book,
                 onTap: (){

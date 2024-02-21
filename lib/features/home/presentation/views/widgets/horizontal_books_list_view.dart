@@ -6,7 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/app_router.dart';
-import 'custom_book_item.dart';
+import 'featured_list_book_item.dart';
 
 class HorizontalBooksListView extends StatefulWidget {
   const HorizontalBooksListView({super.key});
@@ -36,7 +36,7 @@ BlocProvider.of<FeaturedBooksCubit>(context).fetchFeaturedBooks();
               itemBuilder: (context, index) {
                 return  Padding(
                   padding: const EdgeInsetsDirectional.only(end: 16),
-                  child: CustomBookItem(
+                  child: FeaturedListBookItem(
                     image: state.books[index].imageUrl,
                     bookModel:state.books[index],
                     onTap: (){

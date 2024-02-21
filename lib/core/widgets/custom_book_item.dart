@@ -1,14 +1,14 @@
 import 'package:bookly_app/core/utils/app_router.dart';
-import 'package:bookly_app/features/home/data/models/book_model.dart';
+import 'package:bookly_app/core/models/book_model.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/rating_widget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/utils/styles.dart';
+import '../utils/styles.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key,  required this.bookModel});
+class CustomBookItem extends StatelessWidget {
+  const CustomBookItem({super.key,  required this.bookModel});
 final BookModel bookModel;
 
   @override

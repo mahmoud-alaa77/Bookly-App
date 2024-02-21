@@ -2,12 +2,23 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CustomSearchTextField extends StatelessWidget {
-  const CustomSearchTextField({super.key});
+import '../../../../../core/models/book_model.dart';
+
+class CustomSearchTextField extends StatefulWidget {
+  const CustomSearchTextField({super.key, this.onChanged,});
+final void Function(String)? onChanged;
+  @override
+  State<CustomSearchTextField> createState() => _CustomSearchTextFieldState();
+}
+
+class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
+final mySearchController =TextEditingController();
+String searchedText='';
 
   @override
   Widget build(BuildContext context) {
     return  TextField(
+      controller: mySearchController,
       decoration: InputDecoration(
           hintText: "Search",
           suffixIcon:  Icon(
@@ -17,6 +28,7 @@ class CustomSearchTextField extends StatelessWidget {
           enabledBorder: buildOutlineInputBorder( color: Colors.grey),
           focusedBorder: buildOutlineInputBorder(color: Colors.white)
       ),
+      onChanged:widget.onChanged
     );
   }
 
@@ -26,4 +38,6 @@ class CustomSearchTextField extends StatelessWidget {
       borderSide: BorderSide(color: color),
     );
   }
+
+
 }

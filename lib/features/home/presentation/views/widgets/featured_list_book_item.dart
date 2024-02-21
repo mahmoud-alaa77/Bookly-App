@@ -1,10 +1,10 @@
-import 'package:bookly_app/features/home/data/models/book_model.dart';
+import 'package:bookly_app/core/models/book_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 
-class CustomBookItem extends StatelessWidget {
-  const CustomBookItem({super.key, required this.image, required this.bookModel, this.onTap});
+class FeaturedListBookItem extends StatelessWidget {
+  const FeaturedListBookItem({super.key, required this.image, required this.bookModel, this.onTap});
 final String image;
 final BookModel bookModel;
 final void Function()? onTap;

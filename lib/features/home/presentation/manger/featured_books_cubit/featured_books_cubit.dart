@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo.dart';
 import 'package:flutter/material.dart';
 
-import '../../../data/models/book_model.dart';
+import '../../../../../core/models/book_model.dart';
 
 
 part 'featured_books_state.dart';

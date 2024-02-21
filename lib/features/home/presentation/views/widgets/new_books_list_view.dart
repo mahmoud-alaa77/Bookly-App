@@ -5,7 +5,7 @@ import 'package:bookly_app/features/home/presentation/manger/newest_books_cubit/
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'new_books_list_view_item.dart';
+import '../../../../../core/widgets/custom_book_item.dart';
 
 class NewestListView extends StatefulWidget {
   const NewestListView({super.key});
@@ -31,7 +31,7 @@ class _NewestListViewState extends State<NewestListView> {
             itemBuilder: (context, index) {
               return  Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
-                child: BestSellerListViewItem(
+                child: CustomBookItem(
                  bookModel:  state.books[index],
                 ),
               );

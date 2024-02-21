@@ -10,12 +10,15 @@ final String errorMessage;
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(Icons.error),
+          const Icon(Icons.error_outline_sharp),
           const SizedBox(
             height: 6,
           ),
-          Text(errorMessage ,style: Styles.textStyle18,textAlign: TextAlign.center,),
+          Text(errorMessage ,style: Styles.textStyle18.copyWith(
+            fontWeight: FontWeight.bold
+          ),textAlign: TextAlign.center,),
         ],
       ),
     );
