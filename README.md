@@ -1,20 +1,14 @@
-# bookly_app
+![bookly_app_ui](https://github.com/user-attachments/assets/b18bb38e-54be-43ce-87d2-135d21f4f0f6)# ✨Bookly App✨
+# Book Discovery and Reading App
+One of the key features of the Bookly App is the ability to read books and rate them within the app.
 
-A new Flutter project.
+# Key Features:
+- Powerful recommendation engine that suggests books tailored to your reading preferences and interests.
+- Explore in-depth information about each book, including synopsis, author bios, rating and awards
+- Search and Discover Books.
 
-## Getting Started
+👉Api link https://www.postman.com/restless-space-875499/workspace/students/collection/14058212-d3c30656-4efa-4166-8405-86655985d94d?action=share&creator=14058212
 
-This project is a starting point for a Flutter application.
-This project is a starting point for a Flutter application.
-This project is a starting point for a Flutter application.
+👀Project UI
 
-
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![bookly_app_ui](https://github.com/user-attachments/assets/c021b5d9-2955-4265-8e64-50b4faffb7fe)
