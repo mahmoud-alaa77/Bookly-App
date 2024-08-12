@@ -1,4 +1,4 @@
-![bookly_app_ui](https://github.com/user-attachments/assets/b18bb38e-54be-43ce-87d2-135d21f4f0f6)# ✨Bookly App✨
+# ✨Bookly App✨
 # Book Discovery and Reading App
 One of the key features of the Bookly App is the ability to read books and rate them within the app.
 
